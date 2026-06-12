@@ -51,15 +51,15 @@ export default function Projects() {
         </div>
 
         {/* Filter Tabs */}
-        <div className="flex flex-wrap items-center justify-center gap-3 mb-12">
-          <div className="p-1 rounded-2xl bg-white/40 dark:bg-brand-cardDark/40 border border-brand-primary/10 dark:border-brand-accent/10 flex flex-wrap gap-1.5 max-w-full">
+        <div className="flex flex-wrap items-center justify-center gap-5 mb-12">
+          <div className="p-1 px-2 rounded-2xl bg-white/40 dark:bg-brand-cardDark/40 border border-brand-primary/10 dark:border-brand-accent/10 flex flex-wrap gap-1.5 max-w-full">
             {categories.map((cat) => {
               const isSelected = filter === cat;
               return (
                 <button
                   key={cat}
                   onClick={() => setFilter(cat)}
-                  className={`px-4.5 py-2 text-xs sm:text-sm font-semibold rounded-xl transition-all duration-300 ${
+                  className={`px-5 py-2 text-xs sm:text-sm font-semibold rounded-xl transition-all duration-300 ${
                     isSelected
                       ? 'bg-brand-primary dark:bg-brand-accent text-brand-bgLight dark:text-brand-dark shadow-sm'
                       : 'text-brand-dark/70 dark:text-brand-textDark/70 hover:bg-brand-primary/10 dark:hover:bg-brand-accent/10'
@@ -192,8 +192,8 @@ export default function Projects() {
                 </div>
 
                 {/* Project Stats (Team, Duration, Role) */}
-                <div className="grid grid-cols-3 gap-4 p-4.5 rounded-2xl bg-brand-primary/5 dark:bg-brand-bgDark/40 border border-brand-primary/10 dark:border-brand-accent/5">
-                  <div className="flex flex-col">
+                <div className="flex flex-col sm:flex-row gap-6 p-6 rounded-2xl bg-brand-primary/5 dark:bg-brand-bgDark/40 border border-brand-primary/10 dark:border-brand-accent/5">
+                  <div className="flex flex-col flex-1 min-w-[100px]">
                     <span className="text-[10px] font-bold uppercase tracking-widest text-brand-dark/50 dark:text-brand-textDark/40 flex items-center gap-1.5">
                       <User className="w-3 h-3" /> Team Size
                     </span>
@@ -201,7 +201,7 @@ export default function Projects() {
                       {selectedProject.stats.TeamSize}
                     </span>
                   </div>
-                  <div className="flex flex-col border-l border-brand-primary/10 dark:border-brand-accent/10 pl-4">
+                  <div className="flex flex-col flex-1 border-t sm:border-t-0 sm:border-l border-brand-primary/10 dark:border-brand-accent/10 pt-4 sm:pt-0 sm:pl-6 min-w-[100px]">
                     <span className="text-[10px] font-bold uppercase tracking-widest text-brand-dark/50 dark:text-brand-textDark/40 flex items-center gap-1.5">
                       <Clock className="w-3 h-3" /> Duration
                     </span>
@@ -209,11 +209,11 @@ export default function Projects() {
                       {selectedProject.stats.Duration}
                     </span>
                   </div>
-                  <div className="flex flex-col border-l border-brand-primary/10 dark:border-brand-accent/10 pl-4">
+                  <div className="flex flex-col flex-[1.5] border-t sm:border-t-0 sm:border-l border-brand-primary/10 dark:border-brand-accent/10 pt-4 sm:pt-0 sm:pl-6 min-w-[150px]">
                     <span className="text-[10px] font-bold uppercase tracking-widest text-brand-dark/50 dark:text-brand-textDark/40 flex items-center gap-1.5">
                       <Star className="w-3 h-3" /> My Role
                     </span>
-                    <span className="text-xs sm:text-sm font-bold text-brand-primary dark:text-brand-accent mt-1 line-clamp-1">
+                    <span className="text-xs sm:text-sm font-bold text-brand-primary dark:text-brand-accent mt-1">
                       {selectedProject.stats.Role}
                     </span>
                   </div>

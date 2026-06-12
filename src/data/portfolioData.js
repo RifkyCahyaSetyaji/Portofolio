@@ -17,7 +17,7 @@ export const statsData = [
   { label: "Projects Completed", value: 12, suffix: "+" },
   { label: "Awards & Achievements", value: 4, suffix: "" },
   { label: "Certifications", value: 4, suffix: "" },
-  { label: "Organizations & Internships", value: 4, suffix: "" },
+  { label: "Organizations & Internships", value: 5, suffix: "" },
 ];
 
 export const educationData = [
@@ -28,7 +28,8 @@ export const educationData = [
     location: "Kec. Lowokwaru, Kota Malang, Jawa Timur",
     highlights: [
       "Bergabung dengan POROS 2026 (Unit Kegiatan Mahasiswa Keilmuan bidang IT)",
-      "Bergabung dengan BEM FILKOM 2026 sebagai PIT (Pengembangan Informasi & Teknologi)"
+      "Bergabung dengan BEM FILKOM 2026 sebagai PIT (Pengembangan Informasi & Teknologi)",
+      "Terpilih sebagai Asisten Residen Laboratorium Sistem Informasi (Lab SI)"
     ],
   },
   {
@@ -45,9 +46,21 @@ export const educationData = [
 
 export const experienceData = [
   {
+    role: "Asisten Residen (Resident Assistant)",
+    company: "Laboratorium Sistem Informasi (Lab SI) - Universitas Brawijaya",
+    period: "Jun 2026 - Present",
+    type: "Organization",
+    description: "Membantu dalam pengelolaan operasional laboratorium Sistem Informasi, membimbing praktikum mahasiswa, serta melakukan riset dan pengembangan sistem internal laboratorium.",
+    tasks: [
+      // "Bertanggung jawab mendampingi mahasiswa dalam kegiatan praktikum mata kuliah rumpun Sistem Informasi.",
+      // "Mengelola inventaris perangkat keras/perangkat lunak serta memelihara server lokal Laboratorium.",
+      // "Berkolaborasi dengan dosen dan asisten lainnya dalam pengembangan modul ajar dan sistem manajemen lab."
+    ],
+  },
+  {
     role: "Staf IT Solutions (PIT)",
     company: "BEM FILKOM 2026 - Universitas Brawijaya",
-    period: "Mar 2026 - Present",
+    period: "Feb 2026 - Present",
     type: "Organization",
     description: "Bertanggung jawab dalam pengembangan infrastruktur IT organisasi dan manajemen proyek perangkat lunak.",
     tasks: [
@@ -96,16 +109,16 @@ export const experienceData = [
 export const projectsData = [
   {
     id: 1,
-    title: "BEM FILKOM 2026 Web Portal",
+    title: "BEM FILKOM 2026",
     category: "Web Development",
     subcategory: "Next.js & Tailwind CSS",
     description: "Portal resmi BEM Fakultas Ilmu Komputer Universitas Brawijaya 2026 yang mengintegrasikan informasi program kerja, sistem pengaduan mahasiswa, serta pendaftaran kepanitiaan.",
     longDescription: "Website ini bertindak sebagai pusat informasi dan administrasi mahasiswa FILKOM UB. Menggunakan React/Next.js dengan rendering yang cepat serta arsitektur yang dirancang untuk menangani beban traffic tinggi selama masa penerimaan mahasiswa atau program besar.",
     image: null,
-    tags: ["React", "Tailwind CSS", "Framer Motion", "Node.js", "MySQL"],
-    demoUrl: "#",
+    tags: ["Notion"],
+    demoUrl: "https://bemfilkom.ub.ac.id",
     githubUrl: "#",
-    stats: { TeamSize: "7 Orang", Duration: "3 Bulan", Role: "Project Manager & Frontend Coordinator" }
+    stats: { TeamSize: "9 Orang", Duration: "12 Bulan", Role: "Project Manager" }
   },
   {
     id: 2,
@@ -118,7 +131,7 @@ export const projectsData = [
     tags: ["React", "Vite", "Tailwind CSS", "Framer Motion"],
     demoUrl: "#",
     githubUrl: "#",
-    stats: { TeamSize: "4 Orang", Duration: "2 Bulan", Role: "Lead Frontend Developer" }
+    stats: { TeamSize: "8 Orang", Duration: "2 Bulan", Role: "Frontend Developer" }
   },
   {
     id: 3,
@@ -168,7 +181,7 @@ export const projectsData = [
     longDescription: "Proyek freelance pembuatan website profil bisnis laundry dengan struktur SEO optimal dan tingkat kemudahan edit konten tinggi menggunakan WordPress Gutenberg. Dilengkapi dengan Notion Project Planner dalam fase inisiasi proyek.",
     image: null,
     tags: ["WordPress", "Elementor", "Notion", "SEO Tuning"],
-    demoUrl: "#",
+    demoUrl: "https://tjahajalaundry.com",
     githubUrl: "#",
     stats: { TeamSize: "Individu", Duration: "3 Minggu", Role: "Web Developer & Planner" }
   },
